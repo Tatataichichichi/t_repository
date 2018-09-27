@@ -1,0 +1,106 @@
+/*
+* project_name
+* top.css
+*
+*/
+/* --------------------------------
+   top
+-------------------------------- */
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+	text-transform: none;
+}
+
+.reveal h1 {
+	font-size: 1.5em;
+}
+
+.reveal ul li {
+	margin-bottom: 0.5em;
+}
+.reveal ul li:last-child {
+	margin-bottom: 0;
+}
+
+.reveal .txt {
+	line-height: 1.6;
+}
+
+.reveal .txt-bold {
+	font-weight: bold;
+}
+
+.reveal .txt-xxl {
+	font-size: 1.6em;
+}
+
+.reveal .txt-xl {
+	font-size: 1.4em;
+}
+
+.reveal .txt-l {
+	font-size: 1.2em;
+}
+
+.reveal .txt-s {
+	font-size: 0.8em;
+}
+
+.reveal .txt-xs {
+	font-size: 0.6em;
+}
+
+.reveal .txt-xxs {
+	font-size: 0.4em;
+}
+
+.reveal .align-l {
+	text-align: left !important;
+}
+
+.reveal .pic-list {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-justify-content: center;
+
+	    -ms-flex-pack: center;
+
+	        justify-content: center;
+}
+.reveal .pic-list li {
+	margin: 0 0.3em; 
+	list-style: none;
+}
+.reveal .pic-list li span {
+	display: block;
+}
+.reveal .pic-list li img {
+	border: none;
+}
+.reveal .pic-list li .cap {
+	text-align: center; 
+	font-size: 16px; 
+	font-size: 1rem;
+}
+.reveal .pic-list li.li-w38 {
+	width: 38%;
+}
+.reveal .pic-list li.li-w50 {
+	width: 50%;
+}
+.reveal .pic-list li.li-w70 {
+	width: 70%;
+}
+.reveal .pic-list li.li-w80 {
+	width: 80%;
+}
+
+.reveal .data {
+	width: 60%;
+}

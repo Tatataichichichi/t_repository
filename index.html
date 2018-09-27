@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<!-- meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>WEBアクセシビリティについて</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+
+<script src="js/chart.js"></script>
+
+<!-- stylesheet -->
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/white.css" id="theme">
+
+<!-- Theme used for syntax highlighting of code -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+
+<!-- custom style -->
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/top.css">
+
+<!-- Printing and PDF exports -->
+<script>
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+
+
+
+</head>
+<body>
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section class="section-intro">
+        <h1 style="">知ってる？<br>WEBアクセシビリティ</h1>
+        <p>
+          <small>XA　橋本 太一</small>
+        </p>
+      </section>
+
+			<section>
+				<h3>ティムバーナーズ・リー</h3>
+				<p class="txt-s">「The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.」</p>
+				<p class="txt-s fragment">"Webのパワーは、その普遍性にある。障害の有無に関係なく、誰もが使えることが、その本質である"</p>
+			</section>
+
+      <!-- Example of nested vertical slides -->
+      <section class="section-01">
+        <section>
+          <h2 class="txt-l">WEBアクセシビリティってなに？</h2>
+        </section>
+        <section data-transition="fade">
+          <h3>WEB<span class="fragment highlight-red">アクセシビリティ</span></h3>
+          <div class="">
+          <p>"<span class="fragment highlight-red">accessible</span>" は "<span class="fragment highlight-red">access</span>" + "<span class="fragment highlight-red">able</span>"</p>
+					<p class="txt txt-s align-l">アクセシビリティ（英: accessibility）とは、近づきやすさやアクセスのしやすさのことであり、利用しやすさ、交通の便などの意味を含む。国立国語研究所「外来語」委員会は日本語への言い換えとして「<span class="fragment highlight-red">利用しやすさ</span>」を提案している。</p>
+					<p><small>wikipedia「アクセシビリティ」の記事より抜粋</small></p>
+          </div>
+        </section>
+				<section data-transition="fade">
+          <h3>WEBアクセシビリティってなに？</h3>
+          <div class="mt-3">
+          <ul class="txt-s">
+            <li class="fragment">情報へのアクセスのしやすさ</li>
+            <li class="fragment">ヒューマンリーダビリティ（コンテンツが人にとって見やすいか、利用しやすいか）</li>
+            <li class="fragment">マシンリーダビリティ（ブラウザや検索エンジンがコンテンツの意味を正しくよみとれるか）</li>
+          </ul>
+          </div>
+        </section>
+				<section data-transition="fade">
+					<div class="mt-3">
+					<h4 class="txt-s">WEBコンテンツを利用できる端末はたくさんある</h4>
+					<ul class="mt-2 txt txt-xs pic-list">
+						<li class="fragment"><span class="pic"><img src="img/pic_pc.png" alt=""></span>
+						<span class="cap">PC</span></li>
+						<li class="fragment"><span class="pic"><img src="img/pic_sp.png" alt=""></span>
+						<span class="cap">スマートフォン<br>タブレット</span></li>
+						<li class="fragment"><span class="pic"><img src="img/pic_sr.png" alt=""></span>
+							<span class="cap">スクリーンリーダー</span></li>
+						<li class="fragment"><span class="pic"><img src="img/pic_tenji.png" alt=""></span>
+							<span class="cap">点字ディスプレイ</span></li>
+						<li class="fragment"><span class="pic"><img src="img/pic_etc.png" alt=""></span>
+							<span class="cap">テレビ、ゲーム機...etc</span></li>
+					</ul>
+					</div>
+				</section>
+				<section data-transition="fade">
+					<div class="mt-3">
+					<h4 class="txt-s">Web Content Accessibility Guidelines (WCAG) 2.0</h4>
+					<ul class="mt-2 txt txt-xs">
+						<li>W3Cが2008年に規定</li>
+						<li>デザイン（色、テキストサイズ）や<span class="fragment highlight-red">構成</span>、レイアウトについてのアクセシビリティの基準がかかれています。</li>
+						<li>Web Content Accessibility Guidelines (WCAG) 2.0 は、ウェブコンテンツをよりアクセシブルにするための広範囲に及ぶ推奨事項を網羅している。 このガイドラインに従うことで、全盲又はロービジョン、ろう又は難聴、学習障害、認知障害、運動制限、発話困難、光過敏性発作及びこれらの組合せ等を含んだ、様々な障害のある人に対して、コンテンツをアクセシブルにすることができる。又、このガイドラインに従うと、多くの場合、<span class="fragment highlight-red">ほとんどの利用者にとってウェブコンテンツがより使いやすくなる。</span></li>
+					</ul>
+					</div>
+				</section>
+				<section data-transition="fade">
+					<div class="mt-3">
+					<h4>JIS規格</h4>
+
+						<p class="txt txt-xs align-l">JIS規格（日本工業規格 正式名称：JIS X 8341-3）にも「Web Content Accessibility Guidelines (WCAG) 2.0」のガイドラインを元にガイドラインがあり、どこまでそのコンテンツに規定のアクセシビリティ対応ができたかにより、
+A , AA , AAA と3段階で達成または準拠しているレベルを明示することができます。</p>
+
+					</div>
+				</section>　
+      </section>
+
+
+      <section>
+				<section data-transition="fade">
+					<h3 class="txt-l">なんで？WEBアクセシビリティ</h3>
+				</section>
+				<section data-transition="fade">
+	        <h3 class="txt-s">なんで？WEBアクセシビリティ</h3>
+	        <ul class="mt-2 txt txt-xs">
+	        	<li class="fragment">企業のCSR（社会的責任、貢献）の活動のため</li>
+						<li class="fragment">Webサイトがグローバル展開するものだった場合、アクセシビリティ対応がされていないと訴訟問題に発展することもある。</li>
+						<li class="fragment txt-bold">インターネットは幅広い層が利用している。アクセシビリティ対応をすることで、今ままでは<span class="fragment highlight-red">情報取得が難しかった（できなかった）人達に対しても利用してもらえるものができる。</span><span class="txt-bold"> → 潜在顧客を客層のターゲットの範囲に取り込める。</span></li>
+	        </ul>
+				</section>
+				<section data-transition="fade">
+					<h4 class="txt txt-xxs"><span class="txt-l">＜年齢階層別インターネット利用状況（個人）＞</span><br>総務省「通信利用動向調査」</h4>
+					<canvas id="chart1"></canvas>
+					<p class="mt-1 align-l txt txt-xxs">6~59歳までの層ではインターネットの使用率は9割を超えており、<span class="fragment highlight-red bold">また70代の層も5割近くの人が<br>インターネットを利用しています。</span></p>
+				</section>
+				<section data-transition="fade">
+					<div class="mt-4">
+						<h4 class="txt txt-xxs"><span class="txt-l">＜障がいのある方々のインターネット利用率＞</span><br> 総務省 情報通信政策研究所　調査研究[結果概要](平成24年）</h4>
+						<table class="data mt-5 txt-xs" border="1" width="90%" summary="知的障害児者のインターネット利用率の表">
+							<thead>
+								<tr>
+									<th scope="col" abbr=""></th>
+									<th scope="col" align="center" abbr="インターネットを利用している">インターネットを利用している</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row" abbr="視覚障害者">視覚障害者</th>
+									<td align="center"><span class="fragment highlight-red txt-bold txt-l">91.7%</span></td>
+								</tr>
+								<tr>
+									<th scope="row" abbr="聴覚障害者">聴覚障害者</th>
+									<td align="center"><span class="fragment highlight-red txt-bold txt-l">93.4%</span></td>
+								</tr>
+								<tr>
+									<th scope="row" abbr="肢体不自由者">肢体不自由者</th>
+									<td align="center">82.7%</td>
+								</tr>
+								<tr>
+									<td>障がい者全体</td>
+									<td align="center">53.0%</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="mt-5 align-l txt txt-xxs">この調査は東京都に居住する、１６歳以上６９歳以下の心身障がい者を対象に、インターネットに関する利用の動向や意向に関して行われた。有効回答数は812件。</p>
+					</div>
+				</section>
+      </section>
+
+			<section>
+				<section>
+					<h3 class="txt">WEBアクセシビリティ<br>・・・何をすればいいの？</h3>
+				</section>
+				 <section>
+				 	<h3 class="txt-s txt-xs">WEBアクセシビリティ・・・何をすればいいの？</h3>
+					<p class="fragment txt-bold txt">様々な条件で見られることを想定して<br>WEBコンテンツ作ろう！</p>
+				 </section>
+
+				 <section>
+					<h3 class="txt-s txt-xs">WEBアクセシビリティ・・・何をすればいいの？</h3>
+					<h4>使用する色や文字の大きさに気をつける！</h4>
+				 </section>
+				 <section>
+					<h4 class="txt-s txt-s">使用する色や文字の大きさに気をつける！</h4>
+					<ul class="mt-1 txt txt-xs pic-list">
+						<li class="fragment li-w70"><span class="pic"><img src="img/m_accessibility02.png" alt=""></span>
+						<span class="cap txt-xxs">Web ユーザビリティ(https://murashun.jp/blog/20170515-01.html)から引用</span></li>
+					</ul>
+				 </section>
+				 <section>
+					<h4 class="txt-s txt-s">使用する色や文字の大きさに気をつける！</h4>
+					<ul class="mt-2 txt txt-xs pic-list">
+						<li class="fragment"><span class="pic"><img src="img/pic_01_bad.png" alt=""></span></li>
+					</ul>
+				 </section>
+
+
+				 <section>
+					<h3 class="txt-s txt-xs">WEBアクセシビリティ・・・何をすればいいの？</h3>
+					<h4 class="txt-s txt-s">構成、レイアウト、アイコンのデザイン等に気をつける！</h4>
+				 </section>
+				 <section>
+				 <h4 class="txt-s txt-s">構成、レイアウト、アイコンのデザイン等に気をつける！</h4>
+				 <ul class="mt-2 txt txt-xs pic-list col-3">
+					 <li><span class="pic"><img src="img/pic_02_01_bad.png" alt=""></span>
+					 <span class="cap">コンテンツの<br>キャプションがない</span></li>
+					 <li><span class="pic"><img src="img/pic_02_03_bad.png" alt=""></span>
+					 <span class="cap">ナビゲーションの位置が<br>ページによって変わる</span></li>
+					 <li><span class="pic"><img src="img/pic_02_04_bad.png" alt=""></span>
+					 <span class="cap">画像のみのページ</span></li>
+					 <li><span class="pic"><img src="img/pic_02_05_bad.png" alt=""></span>
+					 <span class="cap">アイコンだけで<br>説明が無いボタン</span></li>
+				 </ul>
+				</section>
+
+				 <section>
+					<h3 class="txt-s txt-xs">WEBアクセシビリティ・・・何をすればいいの？</h3>
+					<h4>リンクやボタン等の大きさに気をつける！</h4>
+				 </section>
+				 <section>
+					<h4 class="txt-s txt-s">リンクやボタン等の大きさに気をつける！</h4>
+					<ul class="mt-2 txt txt-xs pic-list">
+ 					 <li class="li-w38"><span class="pic"><img src="img/pic_03_01_bad.png" alt=""></span></li>
+					</ul>
+				 </section>
+			</section>
+
+			<section>
+				<section>
+					<h3 class="txt-s">WEBアクセシビリティ対応って簡単じゃない</h3>
+					<ul class="fragment txt-s mt-5">
+						<li class="txt">考慮することや手間（工数）が増えてしまう・・・。</li>
+						<li class="txt">デザインやレイアウト、構成に制限がかかりやすい。</li>
+						<li class="txt">普段スクリーンリーダー等の特殊な環境でインターネットを利用しない人が、それらの最適な構成やデザインを考えるのには限界がある。</li>
+					</ul>
+				</section>
+				<section>
+					<h3 class="txt-s">WEBアクセシビリティにたいして、私が思うこと</h3>
+					<ul class="txt-s mt-5">
+						<li class="fragment txt txt-s">WEB端末が色々と発展するのと同時にアクセシビリティも見直されていますが、まだまだ発展途上な分野。すぐにかえってくるリターンはないかも。・・・将来的には<span class="fragment highlight-red">利益</span>になる！？</li>
+						<li class="fragment mt-3 txt txt-s">情報取得困難で困っている人が確実います。<br>その人達に起こっている問題を解消し、それが<span class="fragment highlight-red">利益</span>になる！？</li>
+						<li class="fragment mt-3 txt txt-s">未来の自分や身の回りに人に対しての投資・・・結果自分への<span class="fragment highlight-red">利益</span>につながる！？</li>
+					</ul>
+				</section>
+			</section>
+
+
+			<section>
+				<h3>ティムバーナーズ・リー</h3>
+				<p class="txt-s">「The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.」</p>
+				<p class="txt-s">"Webのパワーは、その普遍性にある。障害の有無に関係なく、誰もが使えることが、その本質である"</p>
+			</section>
+    </div>
+
+  </div>
+  <!-- lib -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+	<script src="js/lt.js"></script>
+
+  <script>
+
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/search/search.js', async: true },
+        { src: 'plugin/zoom-js/zoom.js', async: true },
+        { src: 'plugin/notes/notes.js', async: true }
+      ]
+    });
+
+  </script>
+</body>
+</html>
